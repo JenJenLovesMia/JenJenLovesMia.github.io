@@ -385,7 +385,7 @@ p {
         </span>
       </div>
     </div>
-  <audio autoplay controls>
+  <audio id="audio" autoplay controls>
      <source src="claredelune.mp3" type="audio/mpeg">
      Your browser does not support the audio element.
   </audio>
@@ -408,7 +408,9 @@ p {
 <script>
 const elemCard = document.querySelector("div.card");
 const elemClickIcon = document.querySelector("span.click-icon");
- 
+const elemAudio = document.getElementById("audio");
+elemAudio.play();
+  
 elemCard.addEventListener("click", function () {
   elemCard.classList.toggle("is-opened");
   elemClickIcon.classList.toggle("is-hidden");
