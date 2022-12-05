@@ -408,10 +408,10 @@ p {
 <script>
 const elemCard = document.querySelector("div.card");
 const elemClickIcon = document.querySelector("span.click-icon");
-const elemAudio = document.getElementById("audio");
-elemAudio.play();
   
 elemCard.addEventListener("click", function () {
+  var elemAudio = document.getElementById("audio");
+  elemAudio.play();
   elemCard.classList.toggle("is-opened");
   elemClickIcon.classList.toggle("is-hidden");
 });
